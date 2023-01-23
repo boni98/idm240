@@ -1,12 +1,64 @@
+html {
+	background-color: #d97477;
+}
+
 h1{
     font-family: 'Playfair Display SC', serif;
+}
+
+.movie{
+    font-size: 6rem;
+    text-align: center;
+    margin: 0;
 }
 
 p{
     font-family: 'Lato', sans-serif;
 }
 
+.imagesBottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 30px;
+}
+
 img {
     width: 400px;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 7rem;
+    }
+    img {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 700px) {
+    h1 {
+        font-size: 5rem;
+    }
+    img {
+        width: 60%;
+    }
+    .imagesBottom {
+        margin-left: 25%
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .imagesBottom {
+        width: 250px;
+        margin-left: 25%
+    }
 }
