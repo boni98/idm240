@@ -2,16 +2,20 @@ html {
 	background-color: #d97477;
 }
 
-h1{
-    font-family: 'Playfair Display SC', serif;
-    font-size: 4rem;
-    margin-left: 1rem;
+body{
+    padding-bottom: 30px;
 }
 
 .movie{
     font-size: 6rem;
     text-align: center;
     margin: 0;
+}
+
+h1{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 4rem;
+    margin-left: 1rem;
 }
 
 p, ul{
@@ -33,6 +37,9 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.logo {
     margin-top: 30px;
 }
 
@@ -46,9 +53,6 @@ img {
     p, ul{
         font-size: 1.5rem;
     }
-    img {
-        width: 60%;
-    }
 }
 
 @media screen and (min-width: 420px) and (max-width: 700px) {
@@ -60,13 +64,7 @@ img {
     }
     p, ul{
         font-size: 1rem;
-    }
-    img {
-        width: 60%;
-    }
-    .imagesBottom {
-        margin-left: 25%
-    } 
+    }    
 }
 
 @media screen and (max-width: 420px) {
@@ -78,9 +76,5 @@ img {
     }
     p, ul{
         font-size: 1rem;
-    }
-    .imagesBottom {
-        width: 250px;
-        margin-left: 25%
     }
 }
