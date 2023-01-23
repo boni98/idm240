@@ -4,6 +4,8 @@ html {
 
 h1{
     font-family: 'Playfair Display SC', serif;
+    font-size: 4rem;
+    margin-left: 1rem;
 }
 
 .movie{
@@ -12,15 +14,17 @@ h1{
     margin: 0;
 }
 
-p{
+p, ul{
     font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    margin-left: 3rem;
 }
 
 .imagesBottom{
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    gap: 30px;
+    gap: 25px;
 }
 
 img {
@@ -34,7 +38,13 @@ img {
 
 @media screen and (max-width: 900px) {
     h1 {
-        font-size: 7rem;
+        font-size: 3rem;
+    }
+    .movie{
+        font-size: 5rem;
+    }
+    p, ul{
+        font-size: 1.5rem;
     }
     img {
         width: 60%;
@@ -43,19 +53,31 @@ img {
 
 @media screen and (min-width: 420px) and (max-width: 700px) {
     h1 {
-        font-size: 5rem;
+        font-size: 2rem;
+    }
+    .movie{
+        font-size: 4rem;
+    }
+    p, ul{
+        font-size: 1rem;
     }
     img {
         width: 60%;
     }
     .imagesBottom {
         margin-left: 25%
-    }
+    } 
 }
 
 @media screen and (max-width: 420px) {
     h1 {
+        font-size: 1rem;
+    }
+    .movie{
         font-size: 3rem;
+    }
+    p, ul{
+        font-size: 1rem;
     }
     .imagesBottom {
         width: 250px;
