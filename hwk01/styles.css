@@ -24,6 +24,13 @@ p, ul{
     margin-left: 3rem;
 }
 
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 5px;
+}
+
 .imagesBottom{
     display: flex;
     flex-wrap: wrap;
@@ -32,7 +39,7 @@ p, ul{
 }
 
 img {
-    width: 400px;
+    width: 320px;
     height: auto;
     display: block;
     margin-left: auto;
