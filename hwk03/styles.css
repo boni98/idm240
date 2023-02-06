@@ -1,0 +1,31 @@
+.column {
+    display: flex;
+    justify-content: center;
+    float: left;
+    width: 33.33%;
+    height: 300px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+object {
+    max-width: 300px;
+    padding: 1rem;
+    width: 33.3%
+}
+
+@media screen and (max-width : 768px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .column {
+        width: 100%;
+    }
+}
