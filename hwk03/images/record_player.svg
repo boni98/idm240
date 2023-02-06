@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
-<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2807" viewBox="0 0 366.06 347.94" version="1.0" y="0" x="0">
+<?xml-stylesheet type="text/css" href="../styles.css"?>
+
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="record-player" viewBox="0 0 366.06 347.94" version="1.0" y="0" x="0">
   <g id="layer1" transform="translate(-4.4711 -13.529)">
     <g id="g2880" transform="translate(.000051975 -97.5)">
       <rect id="rect2850" stroke-linejoin="round" rx="34.55" ry="34.55" height="344.19" width="362.31" stroke="#000" stroke-linecap="round" y="112.9" x="6.3461" stroke-width="3.75" fill="#fff"/>

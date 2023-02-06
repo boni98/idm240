@@ -1,3 +1,23 @@
+#location{
+    cursor: pointer;
+}
+
+
+#disc{
+    animation: load 1s linear infinite;
+}
+
+@keyframes load {
+    from{
+        transform: rotateX(0deg);
+        transform-origin: center;
+    }
+    to{
+        transform: rotateX(180deg);
+        transform-origin: center;
+    }
+}
+
 .column {
     display: flex;
     justify-content: center;
