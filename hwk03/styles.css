@@ -1,21 +1,80 @@
+.music-note{
+    cursor: pointer;
+    animation: shake 1s infinite;
+}
+
+@keyframes shake{
+    0% { transform: skewX(-1deg); }
+    5% { transform: skewX(1deg); }
+    10% { transform: skewX(-1deg); }
+    15% { transform: skewX(1deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+}
+
 #location{
     cursor: pointer;
 }
 
-
 #disc{
-    animation: load 1s linear infinite;
+    cursor: pointer;
+    animation: spinDisc 3s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+     animation-play-state: paused;
 }
 
-@keyframes load {
+svg:hover #disc{
+    animation-play-state: running;
+}
+
+@keyframes spinDisc{
     from{
-        transform: rotateX(0deg);
-        transform-origin: center;
+        transform: rotate(0deg);
     }
     to{
-        transform: rotateX(180deg);
-        transform-origin: center;
+        transform: rotate(360deg);
     }
+}
+
+#pin{
+    cursor: pointer;
+    animation: spinY 3s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+     animation-play-state: paused;
+}
+
+svg:hover #pin{
+    animation-play-state: running;
+}
+
+@keyframes spinY {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+#hat{
+    cursor: pointer;
+    animation: moveUpDown 1s linear infinite;
+}
+
+#leftEdgeHat{
+    position: absolute;
+}
+
+@keyframes moveUpDown {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(-45deg);
+    }
+    
 }
 
 .column {
