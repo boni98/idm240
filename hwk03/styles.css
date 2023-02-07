@@ -1,81 +1,129 @@
-.music-note{
+#music {
+    cursor: pointer;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+/* luffy svg */
+#luffy {
+    cursor: pointer;
+}
+
+.music-note {
     cursor: pointer;
     animation: shake 1s infinite;
 }
 
-@keyframes shake{
-    0% { transform: skewX(-1deg); }
-    5% { transform: skewX(1deg); }
-    10% { transform: skewX(-1deg); }
-    15% { transform: skewX(1deg); }
-    20% { transform: skewX(0deg); }
-    100% { transform: skewX(0deg); }  
+@keyframes shake {
+    0% {
+        transform: skewX(-1deg);
+    }
+
+    5% {
+        transform: skewX(1deg);
+    }
+
+    10% {
+        transform: skewX(-1deg);
+    }
+
+    15% {
+        transform: skewX(1deg);
+    }
+
+    20% {
+        transform: skewX(0deg);
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
 }
 
-#location{
+/* record player svg */
+#record-player {
     cursor: pointer;
 }
 
-#disc{
+#disc {
     cursor: pointer;
     animation: spinDisc 3s linear infinite;
     transform-origin: 50% 50%;
     transform-box: fill-box;
-     animation-play-state: paused;
+    animation-play-state: paused;
 }
 
-svg:hover #disc{
+svg:hover #disc {
     animation-play-state: running;
 }
 
-@keyframes spinDisc{
-    from{
+@keyframes spinDisc {
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
 
-#pin{
+/* location svg */
+#location {
     cursor: pointer;
-    animation: spinY 3s linear infinite;
-    transform-origin: 50% 50%;
-    transform-box: fill-box;
-     animation-play-state: paused;
 }
 
-svg:hover #pin{
+#pin {
+    animation: spinY 2s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation-play-state: paused;
+}
+
+svg:hover #pin {
     animation-play-state: running;
 }
 
 @keyframes spinY {
-    from{
+    from {
         transform: rotateY(0deg);
     }
-    to{
+
+    to {
         transform: rotateY(360deg);
     }
 }
 
-#hat{
-    cursor: pointer;
-    animation: moveUpDown 1s linear infinite;
+/* hat svg */
+#hat {
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(0deg);
 }
 
-#leftEdgeHat{
-    position: absolute;
+#hat:hover {
+    transform: rotate(-30deg);
+}
+
+/* #hat{
+    cursor: pointer;
+    animation: moveUpDown 1s linear;
+    animation-play-state: paused;
+}
+
+svg:hover #hat{
+    animation-play-state: running;
 }
 
 @keyframes moveUpDown {
     from{
-        transform: rotateX(0deg);
-    }
-    to{
-        transform: rotateX(-45deg);
-    }
+        transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(-25deg);
+      }
     
-}
+} */
 
 .column {
     display: flex;
@@ -83,6 +131,7 @@ svg:hover #pin{
     float: left;
     width: 33.33%;
     height: 300px;
+
 }
 
 .row:after {
@@ -92,9 +141,8 @@ svg:hover #pin{
 }
 
 object {
-    max-width: 300px;
-    padding: 1rem;
-    width: 33.3%
+    padding: 1em;
+    width: 70%
 }
 
 @media screen and (max-width : 768px) {
