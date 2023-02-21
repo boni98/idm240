@@ -1,0 +1,50 @@
+/*Mobile First*/
+
+body {
+	margin: 0px;
+	background-color: #000;
+	color: #fff;
+}
+
+#wrapper {
+	margin: 0px auto;
+	max-width: 512px;
+	text-align: center;
+}
+#sndBars {
+  fill: #fff;
+
+	animation-name: glow-green;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+@keyframes glow-green {
+  0% { fill: hsl(0, 0%, 100%); }
+  100% { fill: hsl(136, 80%, 63%); }
+}
+@-webkit-keyframes glow-green {
+ 	0% { fill: hsl(0, 0%, 100%); }
+  100% { fill: hsl(136, 80%, 63%); }
+}
+
+.shrink50 {
+	transform: scale(.5);
+
+	transition-property: scale;
+	transition-duration: .8s;
+	transition-timing-function: ease-out;
+	transition-delay: .1s;
+}
+
+.expand100 {
+	transform: scale(1);
+
+	transition-property: scale;
+	transition-duration: .8s;
+	transition-timing-function: ease-out;
+	transition-delay: .1s;
+}
+
+

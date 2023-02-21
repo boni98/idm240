@@ -1,0 +1,50 @@
+/*Mobile First*/
+
+body {
+	margin: 0px;
+	background-color: #000;
+	color: #fff;
+}
+
+#wrapper {
+	margin: 0px auto;
+	max-width: 1024px;
+}
+
+#saw, #flame  {
+	width: 50%;
+	float: left;
+}
+
+#flame {
+	transform: scale(1);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-delay: .1s;
+
+}
+#flame:hover {
+	transform: scale(.8);
+
+	cursor: pointer;
+}
+
+#saw {
+	transform: rotate(-0deg);
+
+	transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-delay: .1s;
+
+
+}
+#saw:hover {
+
+	/*transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+
+	cursor: pointer;*/
+
+}

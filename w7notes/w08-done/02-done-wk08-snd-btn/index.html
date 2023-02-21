@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SVG - CSS - Translations</title>
+	<!-- META -->
+	<meta charset="utf-8">
+	<!-- CSS -->
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<!-- PAGE CONTENT -->
+	<div id="wrapper">
+	 	<!--
+		<audio id="audioplayer" src="audio/halo1.mp3" autoplay>
+		-->
+	 	<audio id="audioplayer" preload="auto" src="audio/halo1.mp3" >
+			Your LAME browser does not support HTML5 audio!
+		</audio>
+
+		<div id="bugle" class="shrink50">
+			<object data="img/bugle-call.svg" type="image/svg+xml">
+				<img src="img/bugle-call.png" alt="bugle call">
+			</object>
+		</div>
+		<button id="playPauseBtn" type="button" onclick="audioToggle('Holla');">PLAY</button>
+	</div>
+	<!-- JAVASCRIPT-->
+	<script src="main.js"></script>
+</body>
+
+</html>
