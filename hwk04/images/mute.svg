@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../styles.css"?>
+
+<svg id="mute" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.5312 17.9688L33.5938 32.0312M33.5938 17.9688L44.5312 32.0312M5.46875 17.9688V32.0312H13.2812L25.7812 41.4062V8.59375L13.2812 17.9688H5.46875Z" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
