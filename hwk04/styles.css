@@ -49,7 +49,6 @@ svg:hover #pin {
     from {
         transform: rotateY(0deg);
     }
-
     to {
         transform: rotateY(360deg);
     }
@@ -75,74 +74,83 @@ body {
 }
 
 /* movie title */
-h1{
+h1 {
     font-family: 'Playfair Display';
     color: #FFFFFF;
     text-shadow:
         3px 3px 0 #AF0B0F,
-      -1px -1px 0 #AF0B0F,  
-       1px -1px 0 #AF0B0F,
-       -1px 1px 0 #AF0B0F,
+        -1px -1px 0 #AF0B0F,
+        1px -1px 0 #AF0B0F,
+        -1px 1px 0 #AF0B0F,
         1px 1px 0 #AF0B0F;
 }
 
 /* date and time */
-h2{
+h2 {
     font-family: 'Lato';
     font-style: normal;
     color: #FFFFFF;
     text-shadow: -1px 1px 2px #000,
-				  1px 2px 6px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
+        1px 2px 6px #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
 }
 
 /* tickets */
-h3{
+h3 {
     font-family: 'Lato';
     font-style: normal;
     color: #FFFFFF;
     text-shadow: -1px 1px 2px #0000FF,
-				  1px 2px 6px #0000FF,
-				  1px -1px 0 #0000FF,
-				  -1px -1px 0 #0000FF;
+        1px 2px 6px #0000FF,
+        1px -1px 0 #0000FF,
+        -1px -1px 0 #0000FF;
 }
 
+/* h3:hover{
+    color: #0000FF;
+} */
+
 /* location */
-p{
+p {
     font-family: 'Lato';
     font-style: normal;
     color: #FFFFFF;
     text-shadow: -1px 1px 2px #000,
-    1px 2px 6px #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000;
+        1px 2px 6px #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
 }
 
 a.svg {
     position: relative;
     display: inline-block;
-  }
-
-a.svg:after {
-    content: ""; 
-    position: absolute; 
-    top: 0; 
-    right: 0; 
-    bottom: 0; 
-    left: 0;
-  }
-
-/* .logo{
-    cursor: pointer;
-} */
-
-.row {
 }
 
-.column{
+a.svg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parent{
+    text-align: center;
+}
+
+.child{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.row {
+    text-align: center;
+}
+
+.column {
     width: 320px;
-    margin: 0px auto;
 }
 
 object {
@@ -152,41 +160,58 @@ object {
 }
 
 @media (min-width: 620px) {
-    .column{
+    .column {
         display: inline-block;
     }
 }
 
 @media (min-width: 320px) {
-    .column{
+    .column {
         display: inline-block;
-        align-items: center;
     }
-    .logo{
+
+    .logo {
         width: 50px;
         height: 50px;
         margin-top: 37px;
-        object-fit: cover;
     }
-    h1{
+
+    h1, h2, h3, p {
         text-align: center;
     }
-    h2{
+    p{
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    h3{
+        font-family: Lato;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 0em;
         text-align: center;
     }
-    .sound{
+
+    .sound {
         width: 50px;
         height: 50px;
     }
-    .location{
+
+    .location {
         width: 60px;
         height: 60px;
     }
-    .hat{
-        width: 87px;
+
+    .hat {
+        width: 100px;
         height: 36px;
     }
-    .luffy{
+
+    .luffy {
         width: 271px;
         height: 574px;
     }
