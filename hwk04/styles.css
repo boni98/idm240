@@ -1,3 +1,4 @@
+/*** ANIMATIONS ***/
 /* luffy svg */
 .music-notes {
     animation: shake 1s infinite;
@@ -64,6 +65,8 @@ svg:hover #pin {
 #hat:hover {
     transform: rotate(-30deg);
 }
+
+/*** TEXT/IMAGES ***/
 
 body {
     background-image: url('images/background.jpg');
@@ -138,6 +141,7 @@ a.svg:after {
 
 .parent{
     text-align: center;
+    white-space: nowrap;
 }
 
 .child{
@@ -145,7 +149,7 @@ a.svg:after {
     vertical-align: middle;
 }
 
-.row {
+.wholeDiv {
     text-align: center;
 }
 
@@ -159,13 +163,23 @@ object {
     padding: 1rem
 }
 
-@media (min-width: 620px) {
+.text{
+    line-height: 1.5;
+}
+
+/*** MEDIA QUERIES ***/
+
+/* @media (min-width: 620px) {
     .column {
         display: inline-block;
     }
-}
-
+} */
+/* mobile */
 @media (min-width: 320px) {
+    .text{
+        display: block;
+        line-height: 1.2;
+    }
     .column {
         display: inline-block;
     }
@@ -183,7 +197,7 @@ object {
         font-family: Lato;
         font-size: 20px;
         font-weight: 700;
-        line-height: 24px;
+        line-height: 12px;
         text-align: left;
     }
 
@@ -217,14 +231,49 @@ object {
     }
 }
 
+/* tablet */
 @media (min-width: 768px) {
-    /* .row {
-        grid-template-columns: repeat(3, 1fr) ;
-    } */
+    .text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    
+    .text span:first-child {
+        margin-bottom: 5px;
+    }
+
+    .row{
+        white-space: nowrap;
+    }
+
+    .column {
+        display: inline-block;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    h1, h2, h3, p {
+        text-align: center;
+    }
+
+    .luffy{
+        height: 642px;
+        width: 303px;
+        left: 232px;
+        top: 380px;
+    }
+
+    .sound-on{
+        height: 60px;
+        width: 60px;
+    }
 }
 
+/* desktop */
 @media (min-width: 1280px) {
-    /* .row {
-        grid-template-columns: repeat(4, 1fr) ;   
-    }  */
+
 }
