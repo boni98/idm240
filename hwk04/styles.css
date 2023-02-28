@@ -271,5 +271,71 @@ object {
 
 /* desktop */
 @media (min-width: 1280px) {
+    .wholeDiv{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
 
+    .pirateLogo{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .soundLogo{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .title{
+        position: absolute;
+        top: 10%;
+        left: 35%;
+        
+    }
+
+    .date{
+        position: absolute;
+        left: 70%;
+
+    }
+
+    h1{
+        font-family: Playfair Display;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .luffy {
+        position: absolute;
+        left: 20%;
+        top: 25%;
+      }
+      
+      .wholeAMC {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+      }
+      
+      .ticket{
+        position: absolute;
+        left: 50%;
+        top: 56%;
+        z-index: 1;
+      }
+
+      .hat {
+        margin-left: 55%;
+        margin-top: 150%;
+        width: 230px;
+        height: 230px;
+        z-index: 2;
+      }
+    
 }
