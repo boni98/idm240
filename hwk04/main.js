@@ -1,5 +1,4 @@
 var audioPlayerObj = document.getElementById('audioplayer');
-var bugleObj = document.getElementById('bugle');
 
 var sndPlaying = false;
 
@@ -21,7 +20,7 @@ const myC2ID = document.querySelector("#c2id");
 const myC1ID = document.querySelector("#c1id");
 
 circleWrapObj.addEventListener("click", () => {
-  myC2ID.classList.toggle("circle2");
-  myC1ID.classList.toggle("circle1");
-  
+	myC2ID.classList.toggle("circle2");
+	myC1ID.classList.toggle("circle1");
+
 });
