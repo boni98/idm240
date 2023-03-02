@@ -50,6 +50,7 @@ svg:hover #pin {
     from {
         transform: rotateY(0deg);
     }
+
     to {
         transform: rotateY(360deg);
     }
@@ -66,6 +67,11 @@ svg:hover #pin {
     transform: rotate(-30deg);
 }
 
+/* sound button */
+#sound {
+    cursor: pointer;
+}
+
 /*** TEXT/IMAGES ***/
 
 body {
@@ -74,6 +80,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: #FFFFFF;
+    overflow-y: scroll;
 }
 
 /* movie title */
@@ -139,12 +146,12 @@ a.svg:after {
     left: 0;
 }
 
-.parent{
+.parent {
     text-align: center;
     white-space: nowrap;
 }
 
-.child{
+.child {
     display: inline-block;
     vertical-align: middle;
 }
@@ -167,7 +174,7 @@ object {
     display: flex;
     flex-direction: wrap;
     align-items: start;
-  }
+}
 
 /*** MEDIA QUERIES ***/
 
@@ -178,10 +185,11 @@ object {
 } */
 /* mobile */
 @media (min-width: 320px) {
-    .text{
+    .text {
         display: block;
         line-height: 1.2;
     }
+
     .column {
         display: inline-block;
     }
@@ -192,10 +200,13 @@ object {
         margin-top: 37px;
     }
 
-    h1, h2, h3, p {
+    h1,
+    h2,
+    h3{
         text-align: center;
     }
-    p{
+
+    p {
         font-family: Lato;
         font-size: 20px;
         font-weight: 700;
@@ -203,7 +214,7 @@ object {
         text-align: left;
     }
 
-    h3{
+    h3 {
         font-family: Lato;
         font-size: 32px;
         font-weight: 700;
@@ -212,7 +223,7 @@ object {
         text-align: center;
     }
 
-    .sound {
+    #sound {
         width: 50px;
         height: 50px;
     }
@@ -231,15 +242,19 @@ object {
         width: 271px;
         height: 574px;
     }
+    .body{
+        overflow-y: scroll;
+
+    }
 }
 
 /* tablet */
 @media (min-width: 768px) {
-    .text br:nth-child{
+    .text br:nth-child {
         display: none;
     }
 
-    .row{
+    .row {
         white-space: nowrap;
     }
 
@@ -252,58 +267,64 @@ object {
         width: 60px;
     }
 
-    h1, h2, h3{
+    h1,
+    h2,
+    h3 {
         text-align: center;
     }
 
-    .luffy{
+    .luffy {
         height: 642px;
         width: 303px;
         left: 232px;
         top: 380px;
     }
 
-    .sound-on{
+    #sound {
         height: 60px;
         width: 60px;
+    }
+
+    .body{
+        overflow-y: hidden;
     }
 }
 
 /* desktop */
 @media (min-width: 1280px) {
-    .wholeDiv{
+    .wholeDiv {
         display: flex;
         flex-direction: column;
         height: 100vh;
     }
 
-    .pirateLogo{
+    .pirateLogo {
         position: absolute;
         top: 0;
         left: 0;
     }
 
-    .soundLogo{
+    .soundLogo {
         position: absolute;
         top: 0;
         right: 0;
     }
 
-    .title{
+    .title {
         position: absolute;
         top: 10%;
         left: 35%;
-        
+
     }
 
-    .date{
+    .date {
         position: absolute;
         left: 70%;
 
     }
 
-    h1{
-        font-family: Playfair Display;
+    h1 {
+        font-family: 'Playfair Display';
         font-size: 50px;
         font-weight: 700;
         line-height: 38px;
@@ -311,31 +332,141 @@ object {
         text-align: center;
     }
 
+    h2,
+    h3 {font-size: 32px;}
+
     .luffy {
         position: absolute;
         left: 20%;
         top: 25%;
-      }
-      
-      .wholeAMC {
+    }
+
+    .wholeAMC {
         position: absolute;
         left: 50%;
         top: 30%;
-      }
-      
-      .ticket{
+    }
+
+    .ticket {
         position: absolute;
         left: 50%;
         top: 56%;
         z-index: 1;
-      }
+    }
 
-      .hat {
+    .hat {
         margin-left: 55%;
         margin-top: 150%;
         width: 230px;
         height: 230px;
         z-index: 2;
-      }
-    
+    }
+
+    .body{
+        overflow-y: hidden;
+    }
+
 }
+
+/*  sound icon */
+.wrapper{
+    position:relative;
+    margin: 0 auto;
+    height:200px;
+    width:200px;
+  }
+  
+  .btn{
+   position: absolute;
+   cursor: pointer;
+   width:50px;
+   height:50px;
+   background: #AF0B0F;
+   text-align: center;
+   border-radius: 200px; 
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  }
+  
+  .circle-wrapper{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+  }
+  
+  .circle1{
+    z-index:0;
+    width:100px;
+    height:100px;
+    background: #C2564F;
+    border-radius: 200px; 
+    animation: pulse 3s ease both infinite;  
+  }
+  
+  .circle2{
+    z-index:0;
+    width:120px;
+    height:120px;
+    background: #C2564F;
+    border-radius: 200px; 
+    opacity:0.6;
+    animation: pulse 3s ease both infinite;
+    animation-delay: 200ms; 
+  }
+  
+  .material-icons.md-32 {   
+    ont-family: 'Material Icons';
+    font-weight: normal;
+    color:white;
+    font-style: normal;
+    font-size: 32px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1.5;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  
+  
+  
+  @keyframes pulse{
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    20% {
+      transform: scale(1);
+      opacity: 0.3;
+    }
+    
+    50% {
+      transform: scale(0.5);
+      opacity: 0;
+      
+    }
+    
+    70% {   
+      transform: scale(1);
+      opacity: 0.3;
+    }
+    
+    100% {
+      transform: scale(0.5);
+      opacity: 0;
+    }  
+  }
