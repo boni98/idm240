@@ -28,12 +28,14 @@ circleWrapObj.addEventListener("click", () => {
 var hat = document.getElementById("hat")
 var ticket = document.getElementById("ticket")
 
-hat.addEventListener('mouseover', function() {
-	console.log('Mouse over!');
-	ticket.style.visibility = "visible"
-  });
+if (window.innerWidth > 768) {
+	hat.addEventListener('mouseover', function () {
+		console.log('Mouse over!');
+		ticket.style.visibility = "visible"
+	});
 
-  hat.addEventListener('mouseout', function() {
-	console.log('Mouse not hover!');
-	ticket.style.visibility = "hidden"
-  });
+	hat.addEventListener('mouseout', function () {
+		console.log('Mouse not hover!');
+		ticket.style.visibility = "hidden"
+	});
+}
