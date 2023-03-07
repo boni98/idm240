@@ -25,6 +25,8 @@ circleWrapObj.addEventListener("click", () => {
 
 });
 
+var hatSvg
+
 // var hat = document.getElementById("hat")
 // var ticket = document.getElementById("ticket")
 

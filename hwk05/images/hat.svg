@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="../styles.css"?>
 
-<svg id="hat" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 797.06 332.04">
+<svg id="hatSvg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 797.06 332.04">
   <defs>
     <style>
       .cls-1 {

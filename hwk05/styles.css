@@ -1,31 +1,4 @@
 /*** ANIMATIONS ***/
-
-    /* location svg */
-
-    #location {
-        cursor: pointer;
-    }
-
-    #pin {
-        animation: spinY 2s linear infinite !important;
-        transform-origin: 50% 50% !important;
-        transform-box: fill-box !important;
-        animation-play-state: paused !important;
-    }
-
-    svg:hover #pin {
-        animation-play-state: running !important;
-    }
-
-    @keyframes spinY {
-        from {
-            transform: rotateY(0deg) !important;
-        }
-
-        to {
-            transform: rotateY(360deg) !important;
-        }
-    }
 /* luffy svg */
 .music-notes {
     animation: shake 1s infinite;
@@ -54,6 +27,32 @@
 
     100% {
         transform: skewX(0deg);
+    }
+}
+
+/* location svg */
+#location {
+    cursor: pointer;
+}
+
+#pin {
+    animation: spinY 2s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation-play-state: paused;
+}
+
+svg:hover #pin {
+    animation-play-state: running;
+}
+
+@keyframes spinY {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
     }
 }
 
@@ -273,11 +272,6 @@ object {
     align-items: start;
 }
 
-/* location svg */
-    #pin{
-        animation-play-state:paused;
-    }
-
 /*** MEDIA QUERIES ***/
 /* mobile */
 @media (min-width: 320px) {
@@ -462,35 +456,34 @@ object {
         height: 100px;
     }
 
-    .ticket {
+    #ticket {
         position: absolute;
         left: 62%;
-        top: 62%;
-        
+        top: 62%;   
+        visibility: hidden;
     }
 
-    .ticket:hover {
+    .ticketVisible {
         visibility: visible;
         opacity: 0.5;
         transition: all 1s ease-in;
     }
 
     .hat {
-        margin-left: 30%;
-        margin-top: 170%;
+        position: absolute;
+        left: 45%;
+        top: 52%;
         width: 230px;
         height: 230px;
         z-index: 2;
-    }
-
-    /* hat svg */
-    .hat {
-        cursor: pointer;
         transition: transform 0.5s ease-in-out;
         transform: rotate(0deg);
     }
 
     .hat:hover {
+        cursor: pointer;
         transform: rotate(-30deg);
     }
 }
+
+238
