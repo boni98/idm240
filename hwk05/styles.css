@@ -30,32 +30,6 @@
     }
 }
 
-/* location svg */
-#location {
-    cursor: pointer;
-}
-
-#pin {
-    animation: spinY 2s linear infinite;
-    transform-origin: 50% 50%;
-    transform-box: fill-box;
-    animation-play-state: paused;
-}
-
-svg:hover #pin {
-    animation-play-state: running;
-}
-
-@keyframes spinY {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
 /* sound button */
 #sound {
     cursor: pointer;
@@ -216,7 +190,8 @@ h3 {
 } */
 
 /* location */
-p {
+p,
+footer {
     font-family: 'Lato';
     font-style: normal;
     color: #FFFFFF;
@@ -224,6 +199,12 @@ p {
         1px 2px 6px #000,
         1px -1px 0 #000,
         -1px -1px 0 #000;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a.svg {
@@ -338,7 +319,10 @@ object {
 
     .body {
         overflow-y: scroll;
+    }
 
+    .ticket {
+        visibility: visible;
     }
 }
 
@@ -384,6 +368,10 @@ object {
     .body {
         overflow-y: hidden;
     }
+
+    .ticket {
+        visibility: visible;
+    }
 }
 
 /* desktop */
@@ -391,7 +379,7 @@ object {
     .wholeDiv {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 97vh;
     }
 
     .pirateLogo {
@@ -458,6 +446,32 @@ object {
     .location {
         width: 100px;
         height: 100px;
+    }
+
+    /* location svg */
+    #location {
+        cursor: pointer;
+    }
+
+    #pin {
+        animation: spinY 2s linear infinite;
+        transform-origin: 50% 50%;
+        transform-box: fill-box;
+        animation-play-state: paused;
+    }
+
+    svg:hover #pin {
+        animation-play-state: running;
+    }
+
+    @keyframes spinY {
+        from {
+            transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+        }
     }
 
     .ticket {
