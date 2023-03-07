@@ -462,8 +462,9 @@ object {
 
     .ticket {
         position: absolute;
-        left: 60%;
+        left: 62%;
         top: 62%;
+        transition: all ease-in-out;
         visibility: hidden;
     }
 
@@ -485,8 +486,4 @@ object {
     .hat:hover {
         transform: rotate(-30deg);
     }
-    
-
-  
-
 }
