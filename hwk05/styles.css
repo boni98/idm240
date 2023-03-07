@@ -1,4 +1,31 @@
 /*** ANIMATIONS ***/
+
+    /* location svg */
+
+    #location {
+        cursor: pointer;
+    }
+
+    #pin {
+        animation: spinY 2s linear infinite !important;
+        transform-origin: 50% 50% !important;
+        transform-box: fill-box !important;
+        animation-play-state: paused !important;
+    }
+
+    svg:hover #pin {
+        animation-play-state: running !important;
+    }
+
+    @keyframes spinY {
+        from {
+            transform: rotateY(0deg) !important;
+        }
+
+        to {
+            transform: rotateY(360deg) !important;
+        }
+    }
 /* luffy svg */
 .music-notes {
     animation: shake 1s infinite;
@@ -48,7 +75,7 @@
     cursor: pointer;
     width: 80px;
     height: 80px;
-    background: #AF0B0F;
+    background: #ED803A;
     text-align: center;
     border-radius: 200px;
     top: 50%;
@@ -67,7 +94,7 @@
     z-index: 0;
     width: 100px;
     height: 100px;
-    background: #C2564F;
+    background: #FF9800;
     border-radius: 200px;
     animation: pulse 3s ease both infinite;
 }
@@ -76,7 +103,7 @@
     z-index: 0;
     width: 120px;
     height: 120px;
-    background: #C2564F;
+    background: #FF9800;
     border-radius: 200px;
     opacity: 0.6;
     animation: pulse 3s ease both infinite;
@@ -143,7 +170,7 @@
 /*** TEXT/IMAGES ***/
 
 body {
-    background-image: url('images/background.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -247,10 +274,6 @@ object {
 }
 
 /* location svg */
-    #location {
-        cursor: pointer;
-    }
-
     #pin{
         animation-play-state:paused;
     }
@@ -443,8 +466,13 @@ object {
         position: absolute;
         left: 62%;
         top: 62%;
-        transition: all 0.5s ease-in-out;
-        visibility: hidden;
+        
+    }
+
+    .ticket:hover {
+        visibility: visible;
+        opacity: 0.5;
+        transition: all 1s ease-in;
     }
 
     .hat {
@@ -465,27 +493,4 @@ object {
     .hat:hover {
         transform: rotate(-30deg);
     }
-
-    /* location svg */
-    #pin {
-        animation: spinY 2s linear infinite !important;
-        transform-origin: 50% 50% !important;
-        transform-box: fill-box !important;
-        animation-play-state: paused !important;
-    }
-
-    svg:hover #pin {
-        animation-play-state: running !important;
-    }
-
-    @keyframes spinY {
-        from {
-            transform: rotateY(0deg) !important;
-        }
-
-        to {
-            transform: rotateY(360deg) !important;
-        }
-    }
-
 }
