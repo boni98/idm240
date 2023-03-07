@@ -1,5 +1,5 @@
+// AUDIO ON/OFF 
 var audioPlayerObj = document.getElementById('audioplayer');
-
 var sndPlaying = false;
 
 function audioToggle(msg) {
@@ -13,6 +13,7 @@ function audioToggle(msg) {
 	}
 }
 
+// TOGGLE ON/OFF sound button animation
 var svg = document.getElementById("sound");
 
 const circleWrapObj = document.querySelector(".btn");
@@ -25,19 +26,13 @@ circleWrapObj.addEventListener("click", () => {
 
 });
 
-var hatSvg
+// HOVER ON/OFF hat svg with ticket text
+const hatObj = document.querySelector("#hat");
+const myTextObj = document.querySelector(".ticket");
 
-// var hat = document.getElementById("hat")
-// var ticket = document.getElementById("ticket")
-
-// if (window.innerWidth > 768) {
-// 	hat.addEventListener('mouseover', function () {
-// 		console.log('Mouse over!');
-// 		ticket.style.visibility = "visible"
-// 	});
-
-// 	hat.addEventListener('mouseout', function () {
-// 		console.log('Mouse not hover!');
-// 		ticket.style.visibility = "hidden"
-// 	});
-// }
+hatObj.addEventListener("mouseenter", () => {
+  myTextObj.classList.add("ticketVisible");
+});
+hatObj.addEventListener("mouseleave", () => {
+  myTextObj.classList.remove("ticketVisible");
+});

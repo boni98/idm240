@@ -323,7 +323,7 @@ object {
         height: 60px;
     }
 
-    .hat {
+    #hat {
         width: 100px;
         height: 36px;
     }
@@ -456,20 +456,20 @@ object {
         height: 100px;
     }
 
-    #ticket {
+    .ticket {
         position: absolute;
         left: 62%;
         top: 62%;   
-        visibility: hidden;
+        opacity: 0;
     }
 
     .ticketVisible {
         visibility: visible;
-        opacity: 0.5;
-        transition: all 1s ease-in;
+        opacity: 1;
+        transition: all 0.5s ease-in;
     }
 
-    .hat {
+    #hat {
         position: absolute;
         left: 45%;
         top: 52%;
@@ -480,7 +480,7 @@ object {
         transform: rotate(0deg);
     }
 
-    .hat:hover {
+    #hat:hover {
         cursor: pointer;
         transform: rotate(-30deg);
     }
