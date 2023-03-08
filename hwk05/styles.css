@@ -461,12 +461,12 @@ object {
         left: 62%;
         top: 62%;   
         opacity: 0;
+        transition: opacity 0.5s ease-in-out;
     }
 
     .ticketVisible {
-        visibility: visible;
+        /* visibility: visible; */
         opacity: 1;
-        transition: all 0.5s ease-in;
     }
 
     #hat {
