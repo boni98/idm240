@@ -31,8 +31,8 @@ const hatObj = document.querySelector("#hat");
 const myTextObj = document.querySelector(".ticket");
 
 hatObj.addEventListener("mouseenter", () => {
-  myTextObj.classList.add("ticketVisible");
+	myTextObj.classList.add("ticketVisible");
 });
 hatObj.addEventListener("mouseleave", () => {
-  myTextObj.classList.remove("ticketVisible");
+	myTextObj.classList.remove("ticketVisible");
 });

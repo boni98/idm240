@@ -224,6 +224,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center !important;
 }
 
 a.svg {
@@ -306,8 +307,6 @@ object {
         font-family: Lato;
         font-size: 32px;
         font-weight: 700;
-        line-height: 38px;
-        letter-spacing: 0em;
         text-align: center;
     }
 
@@ -316,19 +315,24 @@ object {
         height: 50px;
     }
 
+    .wrapper {
+        height: 120px;
+    }
+
     .location {
         width: 60px;
         height: 60px;
     }
 
     #hat {
-        width: 100px;
-        height: 36px;
+        width: 200px;
+        height: 56px;
     }
 
     .luffy {
         width: 271px;
         height: 574px;
+        padding: 0;
     }
 
     .body {
@@ -362,11 +366,18 @@ object {
         text-align: center;
     }
 
-    .luffy {
-        height: 642px;
-        width: 303px;
-        left: 232px;
-        top: 380px;
+    #hat {
+        width: 150px;
+        height: 5%;
+    }
+
+    .location {
+        width: 80px;
+        height: 80px;
+    }
+
+    .text {
+        font-size: 24px;
     }
 
     .soundLogo {
@@ -451,7 +462,7 @@ object {
     .ticket {
         position: absolute;
         left: 57%;
-        top: 62%;   
+        top: 62%;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
     }
