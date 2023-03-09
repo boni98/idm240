@@ -136,8 +136,6 @@ svg:hover #pin {
     font-feature-settings: 'liga';
 }
 
-
-
 @keyframes pulse {
     0% {
         transform: scale(0.5);
@@ -408,12 +406,6 @@ object {
         left: 33%;
     }
 
-    .date {
-        position: absolute;
-        top: 70%;
-        left: 15%;
-    }
-
     h1 {
         font-family: 'Playfair Display';
         font-size: 50px;
@@ -432,14 +424,14 @@ object {
         position: absolute;
         width: 323px;
         height: 715px;
-        left: 155px;
-        top: 292px;
+        left: 5%;
+        top: 25%;
     }
 
     .wholeAMC {
         position: absolute;
-        left: 40%;
         top: 35%;
+        left: 35%;
     }
 
 
@@ -458,7 +450,7 @@ object {
 
     .ticket {
         position: absolute;
-        left: 62%;
+        left: 57%;
         top: 62%;   
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
@@ -471,7 +463,7 @@ object {
 
     #hat {
         position: absolute;
-        left: 45%;
+        left: 40%;
         top: 52%;
         width: 230px;
         height: 230px;
@@ -485,5 +477,3 @@ object {
         transform: rotate(-30deg);
     }
 }
-
-238
