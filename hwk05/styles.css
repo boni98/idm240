@@ -416,6 +416,12 @@ object {
         top: 10%;
         left: 33%;
     }
+ 
+    .date {
+        position: absolute;
+        top: 70%;
+        left: 15%;
+    }
 
     h1 {
         font-family: 'Playfair Display';
@@ -444,7 +450,6 @@ object {
         top: 35%;
         left: 35%;
     }
-
 
     .body {
         overflow-y: hidden;
