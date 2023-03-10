@@ -30,6 +30,7 @@
     }
 }
 
+  
 /* location svg */
 #location {
     cursor: pointer;
@@ -150,7 +151,6 @@ svg:hover #pin {
     50% {
         transform: scale(0.5);
         opacity: 0;
-
     }
 
     70% {
@@ -164,8 +164,16 @@ svg:hover #pin {
     }
 }
 
-/*** TEXT/IMAGES ***/
+#c2id {
+    animation-play-state: paused;
+}
+  
+#c1id {
+    animation-play-state: paused;
+}
+ 
 
+/*** TEXT/IMAGES ***/
 body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/background.jpg);
     background-repeat: no-repeat;
@@ -407,7 +415,7 @@ object {
 
     .soundLogo {
         position: absolute;
-        top: 5%;
+        top: 10%;
         right: 3%;
     }
 
