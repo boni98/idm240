@@ -32,9 +32,9 @@
 
   
 /* location svg */
-#location {
+/* #locationSvg {
     cursor: pointer;
-}
+} */
 
 #pin {
     animation: spinY 2s linear infinite;
@@ -474,8 +474,8 @@ object {
 
     .ticket {
         position: absolute;
-        left: 57%;
-        top: 62%;
+        left: 55%;
+        top: 68%;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
     }
@@ -485,7 +485,14 @@ object {
         opacity: 1;
     }
 
+    .hatTicket {
+        position: absolute;
+        top: 55%;
+        left: 28%;
+    }
+
     #hat {
+        cursor: pointer;
         position: absolute;
         left: 40%;
         top: 52%;
@@ -497,7 +504,7 @@ object {
     }
 
     #hat:hover {
-        cursor: pointer;
+        
         transform: rotate(-30deg);
     }
 }

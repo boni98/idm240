@@ -3,7 +3,6 @@ var audioPlayerObj = document.getElementById('audioplayer');
 var sndPlaying = false;
 
 function audioToggle(msg) {
-	// alert(msg);
 	if (sndPlaying) {
 		audioPlayerObj.pause();
 		sndPlaying = false;
@@ -48,3 +47,19 @@ hatObj.addEventListener("mouseenter", () => {
 hatObj.addEventListener("mouseleave", () => {
 	myTextObj.classList.remove("ticketVisible");
 });
+
+
+// //ON CLICK open new link tabs
+// const openInNewTab = (url) => {
+// 	window.open(url, "_self");
+//   }
+  
+//   const hat = document.querySelector("#hat");
+//   hat.addEventListener("click", () => {
+// 	openInNewTab("https://www.amctheatres.com/movies/one-piece-film-red-71142");
+//   });
+
+//   const location = document.querySelector("#locationSvg");
+//   hat.addEventListener("click", () => {
+// 	openInNewTab("https://www.google.com/maps/place/AMC+DINE-IN+Fashion+District+8/@39.9519835,-75.1571648,17z/data=!3m2!4b1!5s0x89c6c629ea6ddc0d:0x7edf0a3a89c66f0c!4m6!3m5!1s0x89c6c75a6a0559e3:0x1dc3c709d0f5bc97!8m2!3d39.9519835!4d-75.1571648!16s%2Fg%2F11h80lmbzn");
+//   });
