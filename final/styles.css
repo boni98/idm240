@@ -474,7 +474,7 @@ object {
     .ticket {
         position: absolute;
         left: 55%;
-        top: 68%;
+        top: 58%;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
     }
@@ -499,6 +499,9 @@ object {
         z-index: 2;
         transition: transform 0.5s ease-in-out;
         transform: rotate(0deg);
+        position: absolute;
+        top: 30px;
+        left: 120px;
     }
 
     #hat:hover {

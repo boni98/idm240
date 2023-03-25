@@ -1,0 +1,142 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 35rem;
+    padding-bottom: 5rem;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    background-color: #ECD7D0;
+}
+
+
+.wrapper {
+    width: 900px;
+}
+
+.hero-image {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    background-image: url(images/hero.png);
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.image {
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+    color: #AF0B0F;
+    font-size: 2.4rem;
+    text-align: left;
+    line-height: 3rem;
+}
+
+p {
+    color: #361E10;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    color: #508a63;
+    text-decoration: none;
+    border: 2px solid #508a63;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    transition: 0.1s ease-in-out;
+}
+
+.button:hover {
+    color: #FFFBF4;
+    background: #235347;
+    border: 2px solid #235347;
+
+}
+
+@media screen and (max-width: 900px) {
+    .hero-image {
+        height: 320px;
+    }
+
+    body {
+        padding-top: 22rem;
+    }
+
+    .wrapper {
+        width: 850px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 580px;
+    }
+
+    body {
+        padding-top: 22rem;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: 380px;
+    }
+
+    body {
+        padding-top: 22rem;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+}
