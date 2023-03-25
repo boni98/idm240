@@ -41,18 +41,40 @@ circleWrapObj.addEventListener("click", () => {
 const hatObj = document.querySelector("#hat");
 const myTextObj = document.querySelector(".ticket");
 
-hatObj.addEventListener("mouseenter", () => {
-	myTextObj.classList.add("ticketVisible");
-});
-hatObj.addEventListener("mouseleave", () => {
-	myTextObj.classList.remove("ticketVisible");
-});
-
+// hatObj.addEventListener("mouseover", () => {
+// 	myTextObj.classList.add("ticketVisible");
+// });
+// hatObj.addEventListener("mouseout", () => {
+// 	myTextObj.classList.remove("ticketVisible");
+// });
 
 // //ON CLICK open new link tabs
-// const openInNewTab = (url) => {
-// 	window.open(url, "_self");
-//   }
+const openInNewTab = (url) => {
+	window.open(url, "_blank");
+  }
+
+// hatObj.addEventListener("click", () => {
+// 	alert("adf");
+// 	openInNewTab("https://www.amctheatres.com/movies/one-piece-film-red-71142");
+//   });
+
+  hatObj.addEventListener("mouseover", myFunction);
+  hatObj.addEventListener("click", mySecondFunction);
+  hatObj.addEventListener("mouseout", myThirdFunction);
+  
+  function myFunction() {
+	myTextObj.classList.add("ticketVisible");
+  }
+  
+  function mySecondFunction() {
+	// alert("adf");
+	openInNewTab("https://www.amctheatres.com/movies/one-piece-film-red-71142");
+  }
+  
+  function myThirdFunction() {
+	myTextObj.classList.remove("ticketVisible");
+  }
+
   
 //   const hat = document.querySelector("#hat");
 //   hat.addEventListener("click", () => {

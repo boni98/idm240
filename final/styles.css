@@ -4,6 +4,11 @@
     animation: shake 1s infinite;
 }
 
+img{
+    width: 200px;
+    height: 90px;
+}
+
 @keyframes shake {
     0% {
         transform: skewX(-1deg);
@@ -29,8 +34,7 @@
         transform: skewX(0deg);
     }
 }
-
-  
+ 
 /* location svg */
 /* #locationSvg {
     cursor: pointer;
@@ -332,11 +336,6 @@ object {
         height: 60px;
     }
 
-    #hat {
-        width: 200px;
-        height: 56px;
-    }
-
     .luffy {
         width: 271px;
         height: 574px;
@@ -374,8 +373,8 @@ object {
         text-align: center;
     }
 
-    #hat {
-        width: 150px;
+    img {
+        width: 200px;
         height: 5%;
     }
 
@@ -481,7 +480,6 @@ object {
     }
 
     .ticketVisible {
-        /* visibility: visible; */
         opacity: 1;
     }
 
@@ -491,20 +489,19 @@ object {
         left: 28%;
     }
 
-    #hat {
+    img {
         cursor: pointer;
-        position: absolute;
         left: 40%;
         top: 52%;
-        width: 230px;
-        height: 230px;
+    }
+
+    #hat {
         z-index: 2;
         transition: transform 0.5s ease-in-out;
         transform: rotate(0deg);
     }
 
     #hat:hover {
-        
         transform: rotate(-30deg);
     }
 }
